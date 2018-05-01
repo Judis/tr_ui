@@ -13,12 +13,19 @@
     <nav class="uk-light uk-navbar-container uk-navbar-transparent uk-background-primary" uk-navbar>
       <div class="uk-navbar-left">
         <a class="uk-navbar-item uk-logo" href="#">i18n</a>
-        <ul class="uk-navbar-nav">
-          <li class="uk-active"><a href="#">Projects</a></li>
+        <ul class="uk-breadcrumb">
+          <li><a href="">Project Name</a></li>
+          <li><a href="">Locales</a></li>
         </ul>
       </div>
       <div class="uk-navbar-right">
         <ul class="uk-navbar-nav">
+          <li>
+            <a href="#">
+              <span uk-icon="icon: plus"></span>&nbsp;
+              Add Locale
+            </a>
+          </li>
           <li>
             <a href="#">User Name</a>
             <div class="uk-navbar-dropdown">
@@ -33,28 +40,17 @@
 
     <div class="uk-section uk-section-small">
       <div class="uk-container">
-        <div uk-grid>
-          <div class="uk-width-expand">
-            <ul class="uk-breadcrumb">
-              <li><a href="">Project Name</a></li>
-              <li><a href="">Locales</a></li>
-            </ul>
-          </div>
-          <div class="uk-width-auto">
-            <a href="">Add Locale +</a>
-          </div>
-        </div>
         <ul class="uk-list uk-list-divider">
           <li>
             <div uk-grid>
-              <div class="uk-width-1-4@m">
+              <div class="uk-width-1-4">
                 <a href="">en</a>
-                <span uk-icon="icon: star; ratio: 0.6"></span>
+                <span uk-icon="icon: star; ratio: 0.6" uk-tooltip="Default Locale"></span>
               </div>
-              <div class="uk-width-1-4@m">
+              <div class="uk-width-expand">
                 <progress class="uk-progress" value="30" max="100"></progress>
               </div>
-              <div class="uk-width-1-2@m uk-text-right">
+              <div class="uk-width-auto uk-text-right">
                 <a href="" class="uk-margin-left uk-link-muted">Download</a>
                 <a href="" class="uk-margin-left uk-link-muted">Settings</a>
                 <a href="" class="uk-margin-left uk-link-muted">Remove</a>
@@ -63,13 +59,13 @@
           </li>
           <li>
             <div uk-grid>
-              <div class="uk-width-1-4@m">
+              <div class="uk-width-1-4">
                 <a href="">ru</a>
               </div>
-              <div class="uk-width-1-4@m">
+              <div class="uk-width-expand">
                 <progress class="uk-progress" value="18" max="100"></progress>
               </div>
-              <div class="uk-width-1-2@m uk-text-right">
+              <div class="uk-width-auto uk-text-right">
                 <a href="" class="uk-margin-left uk-link-muted">Download</a>
                 <a href="" class="uk-margin-left uk-link-muted">Settings</a>
                 <a href="" class="uk-margin-left uk-link-muted">Remove</a>
